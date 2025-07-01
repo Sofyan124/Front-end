@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login | Website</title>
+</head>
+<body>
+    <div class="login-box">
+        <div class="login-header" id="loginheader">
+            <h1>Login</h1>
+        </div>
+        <div>
+            <h1 id="admin">Login Berhasil !<br/>Kamu Telah Login sebagai admin
+            <br/> BY PROJECT HARIRI</h1>
+        </div>
+
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Username" id="usernameinput" required>
+            <input type="password" class="input-field" placeholder="Password" id="passwordinput" required>
+        </div>
+        <div class="forgot">
+            <section>
+                <input type="checkbox" id="check">
+                <label for="check" id="checklabel">Remember me</label>
+            </section>
+            <section>
+                <a href="#" id="forgotpassword">Forgot Password?</a>
+            </section>
+        </div>
+        <div class="input-submit">
+            <button class="submit-btn" onclick="onlogin()" id="loginbutton">Login</button>
+            <button class="submit-btn" onclick="onlogout()" id="logoutbutton">Log out</button>
+        </div>
+        <div class="sign-up-link" id="signuplink">
+            <p id="signlink">Don't have account?<a href="#">Register</a></p>
+        </div>
+    </div>
+
+
+    <script src="script.js" type="application/javascript"></script>
+</body>
+</html>
